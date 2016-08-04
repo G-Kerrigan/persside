@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <title>Gross Energy Group - PMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description." content="" />
+
+
+
+
+	<!-- google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Catamaran:400,500,600,800,700,300,200,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css">
+	<!-- google fonts -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Upload Form Files -->
+    <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="js/fileinput_locale_fr.js" type="text/javascript"></script>
+    <script src="js/fileinput_locale_es.js" type="text/javascript"></script>
+     <!-- Upload Form Files -->
+
+
+    <script src="//code.jquery.com/jquery-3.1.0.min.js"></script><!-- jquery -->
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script><!-- data table -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="https://use.fontawesome.com/610b1da922.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <p class="inner_logo"><img src="images/logo.png" alt="logo" width="" height="40" /></p>
+            <p class="personal_name"><i class="fa fa-user" aria-hidden="true"></i> სახელი გვარი</p>
+            <p class="personal_pos"><i class="fa fa-briefcase" aria-hidden="true"></i> ჰიდროლოგ-გეოლოგი</p>
+            <p class="log_out"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>გასვლა</a></p>
+            <ul class="sidebar-nav">
+                <!-- <li>
+                    <a href="project_typ_cat.html">პროექტის ტიპი/კატეგორია</a>
+                </li> -->
+                <li>
+                    <a href="project.html">ჩემი პროექტები</a>
+                </li>
+                <!-- <li>
+                    <a href="project_goal.html">პროექტის ამოცანები</a>
+                </li> -->
+                 <li>
+                    <a href="chart.html">ჩარტი</a>
+                </li>
+                <!--<li>
+                    <a href="physical.html">ფიზიკური პირები</a>
+                </li>
+                <li>
+                    <a href="juridical_part.html">იურიუდიული ნაწილი</a>
+                </li>
+                <li>
+                    <a href="user.html">მომხმარებლები</a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                    	<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                      <a href="#" class="lang_selector">ქართული</a>
+                      <a href="#" class="lang_selector">English</a>
+                        <h2 class="page_title">ჩარტი</h2>
+                            <p class="media-text">
+
+                          <table class="table-fill">
+                            <thead>
+                              <tr>
+                                <th class="text-center"></th>
+                                <th class="text-center">ხელმოწერიდან </br> 3 თვეში</th>
+                                <th class="text-center">ხელმოწერიდან </br> 6 თვეში</th>
+                                <th class="text-center">ხელმოწერიდან </br> 9 თვეში</th>
+                                <th class="text-center">ხელმოწერიდან </br> 12 თვეში</th>
+                                <th class="text-center">ხელმოწერიდან </br> 15 თვეში</th>
+                                <th class="text-center">ხელმოწერიდან </br> 18 თვეში</th>
+                                <th class="text-center">ხელმოწერიდან </br> 21 თვეში</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-hover">
+                              <tr>
+                                <td class="text-left">ადგილმდებარეობის და ძირითადი პარამეტრების განმარტებები</td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ტოპოგრაფიული კვლევა და რუკების მომზადება</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">გეოლოგია, გეოფიზიკა</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">სეისმური რისკის ანალიზი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">სამშენებლო მასალების კვლევა</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">მეტეოროლოგიური და ჰიდროლოგიური კვლევები</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ჰიდრავლიკური კვლევები</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ალტერნატიული ანალიზი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ტექნიკური დიზაინი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ინფრასტრუქტურა</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ელ. ენერგიის გენერაცია და გამოყენება</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">გადამცემ სისტემასტან დაკავშირება</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">გარემოზე ზემოქმედებისა და სოციალური რისკების შეფასების ანგარიშის მომზადება და წარდგება</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">სამუშაოების მოცულობის უწყისი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">მშენებლობის ორგანიზება</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ეკონომიკური ანალიზი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ფინანსური ანალიზი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">შესყიდვების დაგეგმვა და განხორციელების გეგმა</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">სამუშაო ძალის დატრეინინგების გრაფიკი</td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">ტექნიკური ეკნომიკური განხორციელებადობის კვლევის წარდგენა</td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center" style="background:green;"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                              </tr>
+                              </tbody>
+                              </table>
+                            </p>
+                    </div><!-- end col -->
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

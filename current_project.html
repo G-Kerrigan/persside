@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <title>Gross Energy Group - PMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description." content="" />
+
+
+	<!-- google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Catamaran:400,500,600,800,700,300,200,100' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css">
+	<!-- google fonts -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Upload Form Files -->
+    <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="js/fileinput_locale_fr.js" type="text/javascript"></script>
+    <script src="js/fileinput_locale_es.js" type="text/javascript"></script>
+     <!-- Upload Form Files -->
+
+
+    <script src="//code.jquery.com/jquery-3.1.0.min.js"></script><!-- jquery -->
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script><!-- data table -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="https://use.fontawesome.com/610b1da922.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+	<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <p class="inner_logo"><img src="images/logo.png" alt="logo" width="" height="40" /></p>
+            <p class="personal_name"><i class="fa fa-user" aria-hidden="true"></i> სახელი გვარი</p>
+            <p class="personal_pos"><i class="fa fa-briefcase" aria-hidden="true"></i> გეოლოგი</p>
+            <p class="log_out"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>გასვლა</a></p>
+            <ul class="sidebar-nav">
+                <!-- <li>
+                    <a href="project_typ_cat.html">პროექტის ტიპი/კატეგორია</a>
+                </li> -->
+                <li>
+                    <a href="project.html">ჩემი პროექტები</a>
+                </li>
+                <!-- <li>
+                    <a href="project_goal.html">პროექტის ამოცანები</a>
+                </li> -->
+                 <li>
+                    <a href="chart.html">ჩარტი</a>
+                </li>
+                <!--<li>
+                    <a href="physical.html">ფიზიკური პირები</a>
+                </li> -->
+                <!-- <li>
+                    <a href="juridical_part.html">იურიუდიული ნაწილი</a>
+                </li> -->
+                <!-- <li>
+                    <a href="user.html">მომხმარებლები</a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                    	<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                      	<a href="#" class="lang_selector">ქართული</a>
+                      	<a href="#" class="lang_selector">English</a>
+
+                      	<h2 class="page_title">კონკრეტული პროექტის დასახელება</h2>
+
+              <p><i class="fa fa-book" aria-hidden="true"></i> მიმდინარე სამუშაოების სარჩევი:</p>
+
+
+              <!-- TABS -->
+              	<ul class="nav nav-tabs">
+				  <li class="active"><a data-toggle="tab" href="#menu1">ზოგადი ინფორმაცია</a></li>
+				  <li><a data-toggle="tab" href="#menu2">დოკუმენტები</a></li>
+				  <li><a data-toggle="tab" href="#menu3">მასალები</a></li>
+				</ul>
+				<!-- END TABS -->
+
+				<!-- TAB CONTENT -->
+				<div class="tab-content">
+				  <div id="menu1" class="tab-pane fade in active"><!-- MENU 1 -->
+				    <h3>ზოგადი ინფორმაცია პროექტის შესახებ</h3>
+				    <div class="media">
+                          <div class="media-body">
+                            <p class="media-text">
+                                <table class="table table-striped">
+                                    <tbody>
+                                      <tr>
+                                        <td>პროექტი</td>
+                                        <td>რაღაცა ჰესი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>სტატუსი</td>
+                                        <td>მიმდინარე</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ადგილი</td>
+                                        <td>საქართველო</td>
+                                      </tr>
+                                      <tr>
+                                        <td>მდინარე</td>
+                                        <td>მტკვარი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ზედა ნიშნული</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ქვედა ნიშნული</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>კოორდინატი</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>სიმძლავრე</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>გამომუშავება</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ჰესის ტიპი</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>კაშხლის ტიპი</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>დერივაცია</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ტურბინის ტიპი</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>დაწნევა</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>წყლის ხარჯი</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>საორიენტ. ფასი</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>პრეზენტაცია</td>
+                                        <td>402</td>
+                                      </tr>
+                                      <tr>
+                                        <td>პროექტის ტიპი/კატეგორია</td>
+                                        <td>რთული ტიპის / ელექტრული</td>
+                                      </tr>
+                                      <tr>
+                                        <td>შესასრულებელი სამუშაო</td>
+                                        <td>უნდა ავაშენოთ</td>
+                                      </tr>
+                                      <tr>
+                                        <td>საინვესტიციო ღირებულება</td>
+                                        <td>9 542 698 ₾</td>
+                                      </tr>
+                                      <tr>
+                                        <td>სამუშაოს ღირებულება</td>
+                                        <td>2 365 475 ₾</td>
+                                      </tr>
+                                      <tr>
+                                        <td>პროექტის მენეჯერი შემსრულებლის მხრიდან</td>
+                                        <td>კაი კაცი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>პროექტის ხელმძღვანელი </td>
+                                        <td>უფრო კაი კაცი</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </p><!-- media text -->
+                          </div>
+                        </div><!-- end block media -->
+					   <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის მიზანი</h4>
+                            <p class="media-text">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</p>
+                          </div>
+                        </div><!-- end block -->
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის მოკლე აღწერა</h4>
+                            <p class="media-text">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</p>
+                          </div>
+                        </div><!-- end block -->
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის განვითარების ეტაპები</h4>
+                            <p class="media-text">
+                             
+                                  <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#dev1">პირველი ეტაპი</a></li>
+                                    <li><a data-toggle="tab" href="#dev2">მეორე ეტაპი</a></li>
+                                    <li><a data-toggle="tab" href="#dev3">მესამე ეტაპი</a></li>
+                                    <li><a data-toggle="tab" href="#dev4">მეოთხე ეტაპი</a></li>
+                                  </ul>
+
+                                  <div class="tab-content">
+                                    <div id="dev1" class="tab-pane fade in active">
+                                      <table class="table table-striped">
+                                        <tbody>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>გაკეთდა საძირკველი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>აშენდა კაშხალი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>ჩაუტარდა რეკონსტრუქცია</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div id="dev2" class="tab-pane fade">
+                                      <table class="table table-striped">
+                                        <tbody>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>გაკეთდა საძირკველი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>აშენდა კაშხალი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>ჩაუტარდა რეკონსტრუქცია</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div id="dev3" class="tab-pane fade">
+                                      <table class="table table-striped">
+                                        <tbody>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>გაკეთდა საძირკველი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>აშენდა კაშხალი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>ჩაუტარდა რეკონსტრუქცია</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div id="dev4" class="tab-pane fade">
+                                      <table class="table table-striped">
+                                        <tbody>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>გაკეთდა საძირკველი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>აშენდა კაშხალი</td>
+                                          </tr>
+                                          <tr>
+                                            <td>28/25/2016</td>
+                                            <td>ჩაუტარდა რეკონსტრუქცია</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div><!-- End Tab Cont -->
+                            </p><!-- end development P -->
+                          </div>
+                        </div><!-- end block -->
+
+
+                         <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">ვადები</h4>
+                            <p class="media-text">
+                                <table class="table table-striped">
+                                    <tbody>
+                                      <tr>
+                                        <td>დაწყების თარიღი</td>
+                                        <td>25 აგვისტო, 2016 წელი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>დამთავრების თარიღი</td>
+                                        <td>26 ივლისი, 2017 წელი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>სალიცენზიო შეზღუდვები </td>
+                                        <td>შეზღუდვების გარეშე</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </p>
+                          </div>
+                        </div><!-- end block -->
+
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის განხორციელებისათვის გამოყოფილი რესურსები</h4>
+                            <p class="media-text">
+                                <table class="table table-striped">
+                                    <tbody>
+                                      <tr>
+                                        <td>ქვეკონტრაქტორები</td>
+                                        <td>პარტნიორი ფირმების ჩამონათვალი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>გამოყოფილი რესურსები</td>
+                                        <td>გამოყოფილი რესურსების ჩამონათვალი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ადგილობრივი კადრები</td>
+                                        <td>ადგილობრივი კადრების ჩამონათვალი</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </p>
+                          </div>
+                        </div><!-- end block -->
+
+                          <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">დამკვეთი</h4>
+                            <p class="media-text">
+                                <table class="table table-striped">
+                                    <tbody>
+                                      <tr>
+                                        <td>დამკვეთი პირი</td>
+                                        <td>დამკვეთის სახელი და გვარი</td>
+                                      </tr>
+                                      <tr>
+                                        <td>დამკვეთი პირის წარმომადგენელი</td>
+                                        <td>წარმომადგენელი</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </p>
+                          </div>
+                        </div><!-- end block -->
+
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის განხორციელებაში დაინტერესებული სხვა პირები </h4>
+                            <p class="media-text">
+                                <ul class = "list-group">
+                                   <li class = "list-group-item">სახელი და გვარი</li>
+                                   <li class = "list-group-item">სახელი და გვარი</li>
+                                   <li class = "list-group-item">სახელი და გვარი</li>
+                                   <li class = "list-group-item">სახელი და გვარი</li>
+                                   <li class = "list-group-item">სახელი და გვარი</li>
+                                </ul>
+                            </p>
+                          </div>
+                        </div><!-- end block -->
+
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის რისკები</h4>
+                            <p class="media-text">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</p>
+                          </div>
+                        </div><!-- end block -->
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის შეზღუდვები</h4>
+                            <p class="media-text">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</p>
+                          </div>
+                        </div><!-- end block -->
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">პროექტის ვარაუდები</h4>
+                            <p class="media-text">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</p>
+                          </div>
+                        </div><!-- end block -->
+				  </div>
+				  <!-- END 1 TAB Full Content -->
+
+
+
+
+				  <div id="menu2" class="tab-pane fade"><!-- MENU 2 -->
+				    <h3>დოკუმენტაცია</h3>
+				    <div class="media-body">
+                        <p class="media-text">
+                            <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td>მიმდინარე სამუშაოების რეპორტი</td>
+                                    <td>
+	                                	<form>
+											<input id="input-1" type="file" class="file">
+										</form>
+	                                   	<div class="upload_files">
+	                                    	<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> მომდინარე სამუშაოების რეპორტი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		                                    		
+	                                    </div>
+                                    </td>
+                                  </tr>
+                                   <tr>
+                                    <td>შესრულებული სამუშაოების რეპორტი</td>
+                                    <td>
+                                    	<form>
+											<input id="input-1" type="file" class="file">
+										</form>
+	                                   	<div class="upload_files">
+	                                    	<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> შესრულებული სამუშაოების რეპორტი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		                                    		
+	                                    </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </p>
+                      </div>
+				  </div>
+				  <!-- END 2 TAB Full Content -->
+
+
+				  <div id="menu3" class="tab-pane fade"><!-- MEnu 3 -->
+				    <h3>მასალები</h3>
+					    	
+					    		<ul class="nav nav-pills nav-stacked col-md-3 tab16">
+								  <li><a data-toggle="tab" href="#menu3_1"><i class="fa fa-chevron-down" aria-hidden="true"></i> ტოპოგრ. კვლევა და მასალების მომზადება</a></li>
+								  <li><a data-toggle="tab" href="#menu3_2"><i class="fa fa-chevron-down" aria-hidden="true"></i> გეოლოგია/გეოფიზიკა</a></li>
+								  <li><a data-toggle="tab" href="#menu3_3"><i class="fa fa-chevron-down" aria-hidden="true"></i> სეისმური ანგარიში</a></li>
+								  <li><a data-toggle="tab" href="#menu3_4"><i class="fa fa-chevron-down" aria-hidden="true"></i> სამშენებლო მასალების კვლევა</a></li>
+								  <li><a data-toggle="tab" href="#menu3_5"><i class="fa fa-chevron-down" aria-hidden="true"></i> მეტეო. და ჰიდრავლიკური კვლევა</a></li>
+								  <li><a data-toggle="tab" href="#menu3_6"><i class="fa fa-chevron-down" aria-hidden="true"></i> ჰიდრავლიკური კვლევები</a></li>
+								  <li><a data-toggle="tab" href="#menu3_7"><i class="fa fa-chevron-down" aria-hidden="true"></i> ალტერნატივების ანალიზი</a></li>
+								  <li><a data-toggle="tab" href="#menu3_8"><i class="fa fa-chevron-down" aria-hidden="true"></i> გარემოზე ზემოქ. შეფასება და სოც. რისკების ანგარიში</a></li>
+								  <li><a data-toggle="tab" href="#menu3_9"><i class="fa fa-chevron-down" aria-hidden="true"></i> ინფრასტრუქტურა</a></li>
+								  <li><a data-toggle="tab" href="#menu3_10"><i class="fa fa-chevron-down" aria-hidden="true"></i> გენერაცია</a></li>
+								  <li><a data-toggle="tab" href="#menu3_11"><i class="fa fa-chevron-down" aria-hidden="true"></i> ქსელთან მიერთება და გადაცემის ხაზი</a></li>
+								  <li><a data-toggle="tab" href="#menu3_12"><i class="fa fa-chevron-down" aria-hidden="true"></i> ტექნიკური დიზაინი</a></li>
+								  <li><a data-toggle="tab" href="#menu3_13"><i class="fa fa-chevron-down" aria-hidden="true"></i> მშენებლობის ორგანიზება</a></li>
+								  <li><a data-toggle="tab" href="#menu3_14"><i class="fa fa-chevron-down" aria-hidden="true"></i> ბაზრის კვლევა</a></li>
+								  <li><a data-toggle="tab" href="#menu3_15"><i class="fa fa-chevron-down" aria-hidden="true"></i> ფინანსური ანალიზი</a></li>
+								  <li><a data-toggle="tab" href="#menu3_16"><i class="fa fa-chevron-down" aria-hidden="true"></i> შესყიდვების დაგეგმვა და განხორციელების გეგმა</a></li>
+								  <li><a data-toggle="tab" href="#menu3_17"><i class="fa fa-chevron-down" aria-hidden="true"></i> მუშახელის მომზადების გრაფიკი</a></li>
+								  <li><a data-toggle="tab" href="#menu3_18"><i class="fa fa-chevron-down" aria-hidden="true"></i> ფინალური რეპორტი</a></li>
+							  </ul>		
+						
+						<div class="col-md-9">
+						<div class="tab-content cont-16">
+						  <div id="menu3_1" class="tab-pane fade">
+						    <div class="cont-16-desc">
+						    	 <div class="form-group">
+						    	 	<p>აირჩიეთ მასშტაბი:</p>
+						    	 	<form>
+									  	<select class="selectpicker" data-style="btn-primary">
+	 										<option>1 : 10 000</option>
+	 										<option>1 : 5 000</option>
+	 										<option>1 : 500</option>
+	 										<option>1 : 12 000</option>
+	 										<option>1 : 20 000</option>
+	 										<option>1 : 50 000</option>
+										</select>
+    									<input id="input-1" type="file" multiple class="file">
+									</form>
+									<div class="upload_files">
+	                                   	<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია <span style="color:red;">1 : 12 000</span></a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია <span style="color:red";>1 : 50 000</span></a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                </div>
+								</div>
+						    </div>
+						  </div><!-- END 3_******************************************************************************************************************* -->
+						  <div id="menu3_2" class="tab-pane fade">
+						    <div class="cont-16-desc">
+						    	<p class="parent_article_title">ჰიდრო კვანძები:</p>
+						    	<table class="table table-striped">
+						    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> სათავე ნაგებობები(კაშხალი და სალექარი)</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გენ. გეგმა</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											  <!-- თუ პლაგინმა არ იმუშავა ამას ვაბრუნებთ <input type="file" value="file">
+											  <button type="button" class="btn btn-success upload_btn btn-xs">ატვირთვა</button> -->
+											</form>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჭრილები</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">დერივაცია</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჰესის შენობა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+						    	<table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გენ. გეგმა პირობითი ნიშნებით</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გენ. ანვითარება </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გენ. გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+			                                   	<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> დამატებითdfdd sdfsdfsd swfsdfsd sdf sdfsd sdfsd sdf sdf sdfs sd sdffdfdfdfdი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ლითოლოგიური ჭრილები</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">გამთანაბრებელი შახტა და სადაწნეო აუზი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჰესის შენობა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">საბოლოო ვერსია</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+						    </div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_3" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_3</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_4" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_4</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_5" class="tab-pane fade">
+						    <div class="cont-16-desc">
+						    	<table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">აუზის ზოგადი მიმოხილვა</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">მეტოდოლოგია, წყაროები</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">კლიმატი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჰაერის ტემპერატურა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ატმოსფერული ნალექი</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჰაერის სინოტივე</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">თოვლის საფარი</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ქარი</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">წყლის მრავალწლიური საშუალო ხარჯი (ნორმა)</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">წყლის უდიდესი ხარჯი</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">წყლის უმცირესი ხარჯი</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">წლის მყარი ნატანი</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ატივნარებული ნატანის გრანომეტ. შედარება</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">წყლის ქიმიური შემადგენლობობა</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">წყლის ტემპერატურა</td>
+	                                    <td>
+		                                    <form>
+		                                    	<input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> HPP ფინალური ვერსია</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    			                                    		
+	                                    	</div>
+										</td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+						    </div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_6" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_6</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_7" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_7</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_8" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_8</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_9" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_9</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_10" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_10</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_11" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_11</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_12" class="tab-pane fade">
+						    <div class="cont-16-desc">
+						    	<table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">სიტოაციური გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> სიტოაციური გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">გენ. გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გენ. გეგმა</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ინფრასტრუქტურის გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ინფრასტრუქტურის გეგმა</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">მშენებლობის ორგანიზაციის სიტოაციური გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> მშენებლობის ორგანიზაციის სიტოაციური გეგმა</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>	                                    		
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+
+	                            <p class="parent_article_title">სათავე ნაგებობა:</p>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> კაშხალი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჭრილი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> თევზსავალი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჭრილი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> თევზსავალი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჭრილი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> სალექარი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჭრილი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> წყალმიმღები</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                  <td class="name16">ჭრილი</td>
+	                                  <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">დერივაცია</p>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> არხი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა პიკეტაჟით</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">პროფილი</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">განივი ჭრილები</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> გვირაბი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა პიკეტაჟით</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">პროფილი</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">განივი ჭრილები</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <table class="table table-striped">
+							    	<caption><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> მილსადენი</caption>
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა პიკეტაჟით</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">პროფილი</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">განივი ჭრილები</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">გამთანაბრებელი შახტა/სადაწნეო აუზი</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">ჭრილები</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">ჰესის შენობა</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმები</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">ჭრილები</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ჭრილი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                 	<td class="name16">ფასადები</td>
+	                                  	<td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+	                                    	<div class="upload_files">
+	                                    		<a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ფასადი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">ტექნოლოგიური საშუალებების განთავსების გეგმა</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> გეგმა </a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">წყალსადენი, კანალიზაცია</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">ნახაზი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ნახაზი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                 <p class="parent_article_title">ელექტრო სქემა</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">განათება</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ნახაზი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">მართვის სქემა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ნახაზი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">გადამყვანი არხი</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">გეგმა</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ნახაზი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                  <tr>
+	                                    <td class="name16">ჭრილი</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> ნახაზი</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+                                <p class="parent_article_title">ალბომი</p>
+                                <table class="table table-striped">
+	                                <tbody>
+	                                  <tr>
+	                                    <td class="name16">PDF ალბომი (საბოლოო ვერსია)</td>
+	                                    <td>
+	                                    	<form>
+											  <input id="input-1" type="file" class="file">
+											</form>
+											<div class="upload_files">
+			                                    <a class="attached_file" href="#!"><i class="fa fa-file-text-o" aria-hidden="true"></i> PDF ალბომი (საბოლოო ვერსია)</a><span class="attached_files_control"><button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>&nbsp;&nbsp;&nbsp;<!-- <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button> --></span>
+	                                    	</div>
+	                                    </td>
+	                                  </tr>
+	                                </tbody>
+                                </table>
+						    </div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_13" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_13</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_14" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_14</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_15" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_15</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_16" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_16</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_17" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_17</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						  <div id="menu3_18" class="tab-pane fade">
+						    <div class="cont-16-desc">menu3_18</div>
+						  </div><!-- END 3_******************************************************************************************************************** -->
+						</div><!-- Tab Content -->
+						</div>
+					  </div><!-- End Menu 3 -->
+			</div><!-- Main Block (All) -->
+			<!-- END 3 TAB Full Content -->
+
+
+
+
+                    </div><!-- COL -->
+                </div><!-- ROW -->
+            </div><!-- Container Fluid -->
+        </div><!-- /#page-content-wrapper -->
+    </div><!-- /#wrapper -->
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+<script>
+    $('#file-fr').fileinput({
+        language: 'fr',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $('#file-es').fileinput({
+        language: 'es',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $("#file-0").fileinput({
+        'allowedFileExtensions' : ['jpg', 'png','gif'],
+    });
+    $("#file-1").fileinput({
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+  });
+    /*
+    $(".file").on('fileselect', function(event, n, l) {
+        alert('File Selected. Name: ' + l + ', Num: ' + n);
+    });
+    */
+  $("#file-3").fileinput({
+    showUpload: false,
+    showCaption: false,
+    browseClass: "btn btn-primary btn-lg",
+    fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+  });
+  $("#file-4").fileinput({
+    uploadExtraData: {kvId: '10'}
+  });
+    $(".btn-warning").on('click', function() {
+        if ($('#file-4').attr('disabled')) {
+            $('#file-4').fileinput('enable');
+        } else {
+            $('#file-4').fileinput('disable');
+        }
+    });    
+    $(".btn-info").on('click', function() {
+        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+    });
+    /*
+    $('#file-4').on('fileselectnone', function() {
+        alert('Huh! You selected no files.');
+    });
+    $('#file-4').on('filebrowse', function() {
+        alert('File browse clicked for #file-4');
+    });
+    */
+    $(document).ready(function() {
+        $("#test-upload").fileinput({
+            'showPreview' : false,
+            'allowedFileExtensions' : ['jpg', 'png','gif'],
+            'elErrorContainer': '#errorBlock'
+        });
+        /*
+        $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+            alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+        });
+        */
+    });
+  </script>
+
+</html>
