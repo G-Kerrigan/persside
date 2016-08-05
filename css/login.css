@@ -66,13 +66,13 @@ body a {
 }
 
 
-.modal-content, .form-signin{
+.container .modal-content, .container .form-signin{
 	background-color:#ececec !important;
 	background-image:url(../images/login_bg.png) !important;
 }
 
 
-.login_modal_button{
+.container .login_modal_button{
 
 	font-family:'Catamaran',"BPG Arial", sans-serif !important;
 	border-radius:0px !important;
@@ -83,12 +83,12 @@ body a {
 	box-shadow:0 0 1px #000;
 }
 
-.login_modal_button:hover{
+.container .login_modal_button:hover{
 	color:#fff !important;
 	background:#215DA8;
 }
 
-.login_modal_button:focus{
+.container .login_modal_button:focus{
 	outline: none;
 	border: none;
 	color:#fff !important;
@@ -135,7 +135,7 @@ body a {
 	}
 }
 
-.modal-body .form-control, .login_btn{
+.container .modal-body .form-control, .login_btn{
 
 	margin:20px 0;
 }

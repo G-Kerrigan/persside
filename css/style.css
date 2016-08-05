@@ -16,6 +16,10 @@ body{
 	clear:both;
 }
 
+h3{
+  margin-bottom:20px !important;
+}
+
 
 .page_title{
 
@@ -97,6 +101,10 @@ body{
 
 }
 
+.attached_file {
+  color:#09b83e;
+}
+
 .attached_files_control{
 
   display:inline;
@@ -128,6 +136,11 @@ body{
 }
 
 
+#menu1 .form-control{
+
+  margin-bottom:10px;
+}
+
 
 
 
@@ -144,7 +157,14 @@ body{
 
 .parent_article_title{
   /*nothing yet (505 line)*/
-  font-weight:bold;
+  padding:10px;
+  border-radius: 5px;
+  background:#8BC34A;
+  width:30%;
+}
+
+.file_content_list{
+  /*not yet*/
 }
 
 .tabs-below > .nav-tabs,
